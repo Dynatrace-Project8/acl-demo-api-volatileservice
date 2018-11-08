@@ -24,6 +24,7 @@ router.get('/', async (req, res, next) => {
         entityList[event.entityId] = {
           entityId: event.entityId,
           entityName: event.entityName,
+          tags: event.tags,
           events: [],
         }
       }

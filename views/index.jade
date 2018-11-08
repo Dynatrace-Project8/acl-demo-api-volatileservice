@@ -9,11 +9,20 @@ block content
       tr  
         th Entity Id
         th Entity Name
+        th Tags
         th # Events
 
       tbody
         each entity in entityList
           tr
-            td=entity.entityId
+            td
+              small=entity.entityId
             td=entity.entityName
+
+            td
+              each tag in entity.tags
+                  span.badge.badge-primary.mx-1
+                    | #{tag.key}: #{tag.value}
+
             td=entity.events.length
+

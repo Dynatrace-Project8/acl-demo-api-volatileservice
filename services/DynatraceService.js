@@ -12,7 +12,7 @@ class DynatraceService {
    * Fetch all services from the Dynatrace API
    */
   async getEvents() {
-    const url = `${this.baseUrl}/events`;
+    const url = `${this.baseUrl}/events?eventType=CUSTOM_DEPLOYMENT`;
     const result = await axios.get(url, this.axiosConfig);
     if(result.data) return result.data;
     return [];
