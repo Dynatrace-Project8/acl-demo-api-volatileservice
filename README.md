@@ -16,4 +16,4 @@ Without looking at the source code, use the API explorer to find and try out the
 * Fill in the APi credentials you created previously
 * In the integrated terminal, in the project directory, run `npm install` to bring in all dependencies
 * Run `npm start`
-* Go to [localhost on port 3000](http://localhost:3000) to view the dashboard# acl-demo-api-volatileservice
+* Go to [localhost on port 3000](http://localhost:3000) to view the dashboard
